@@ -3,18 +3,18 @@
 #SBATCH -c 20
 #SBATCH --gres=gpu:volta:1
 
-# set environment variables
-export SPARSE_PROBING_ROOT=/home/ep/Documents/superposition/sparse-probing-dropout
-export PATH=$SPARSE_PROBING_ROOT:$PATH
+# # set environment variables
+# export SPARSE_PROBING_ROOT=/home/ep/Documents/superposition/sparse-probing-dropout
+# export PATH=$SPARSE_PROBING_ROOT:$PATH
 
-export HF_DATASETS_OFFLINE=0
-export TRANSFORMERS_OFFLINE=0
+# export HF_DATASETS_OFFLINE=0
+# export TRANSFORMERS_OFFLINE=0
 
-export RESULTS_DIR=/home/ep/Documents/superposition/sparse_probing_results
-export FEATURE_DATASET_DIR=/home/ep/Documents/superposition/sparse_probing_datasets
-export TRANSFORMERS_CACHE=/home/ep/Documents/superposition/sparse_probing_downloads
-export HF_DATASETS_CACHE=/home/ep/Documents/superposition/sparse_probing_downloads
-export HF_HOME=/home/ep/Documents/superposition/sparse_probing_downloads
+# export RESULTS_DIR=/home/ep/Documents/superposition/sparse_probing_results
+# export FEATURE_DATASET_DIR=/home/ep/Documents/superposition/sparse_probing_datasets
+# export TRANSFORMERS_CACHE=/home/ep/Documents/superposition/sparse_probing_downloads
+# export HF_DATASETS_CACHE=/home/ep/Documents/superposition/sparse_probing_downloads
+# export HF_HOME=/home/ep/Documents/superposition/sparse_probing_downloads
 
 
 sleep 0.1  # wait for paths to update
