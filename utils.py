@@ -55,5 +55,9 @@ MODEL_N_LAYERS = {
     'pythia-1b': 16,
     'pythia-1.4b': 24,
     'pythia-2.8b': 32,
-    'pythia-6.9b': 32
+    'pythia-6.9b': 32,
+    'pythia-160m-alldropout-0.1': 12,
+    'pythia-160m-hiddendropout-0.1': 12,
+    'pythia-160m-attndropout-0.1': 12
 }
+
