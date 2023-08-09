@@ -1,8 +1,3 @@
-#!/bin/bash
-#SBATCH -o log/%j-all_context_features.log
-#SBATCH -c 20
-#SBATCH --gres=gpu:volta:1
-
 # # set environment variables
 # export SPARSE_PROBING_ROOT=/home/ep/Documents/superposition/sparse-probing-dropout
 # export PATH=$SPARSE_PROBING_ROOT:$PATH
@@ -20,7 +15,7 @@
 sleep 0.1  # wait for paths to update
 
 # activate environment and load modules
-source $SPARSE_PROBING_ROOT/venv/bin/activate
+# source $SPARSE_PROBING_ROOT/venv/bin/activate
 
 # PYTHIA_MODELS=('pythia-70m' 'pythia-160m') #'pythia-410m' 'pythia-1b' 'pythia-1.4b' 'pythia-2.8b' 'pythia-6.9b')
 PYTHIA_MODELS=('pythia-160m-alldropout-0.1' 'pythia-160m-hiddendropout-0.1' 'pythia-160m-attndropout-0.1') 
