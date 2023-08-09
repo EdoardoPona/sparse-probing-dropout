@@ -54,7 +54,7 @@ do
     #     --feature_dataset natural_lang_id.pyth.512.-1 \
     #     --seed 42 
     echo batch is $batch_size
-    python -u get_activations.py \
+    python -u "${SPARSE_PROBING_ROOT}/get_activations.py" \
         --experiment_name compound_apd \
         --experiment_type activation_probe_dataset \
         --model "$model" \
